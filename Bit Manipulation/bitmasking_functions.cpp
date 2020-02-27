@@ -27,6 +27,21 @@ ll setBit(ll n, ll i) // set ith bit from end(0 based indexing )
 	return ans;
 }
 
+ll clearBit(ll n, ll i)
+{
+	ll mask = ~(1<<i);
+	ll ans = n & mask;
+	return ans ;
+}
+
+ll clearlastiBits(ll n, ll i)
+{
+
+	ll mask = (-1<<i);
+	return n& mask;
+
+}
+
 int main()
 {
 
@@ -39,18 +54,33 @@ int main()
 		cout<<n<<" is even number.\n";
 
 // --------------------------------------------
-	cout<<" bit is "<<(n&1)<<endl; //last bit
+	cout<<"zeroth bit is "<<(n&1)<<endl; //last bit
 
 	if (getBit(n,1))
-		cout<<" bit is "<<1<<endl;
+		cout<<"first bit is "<<1<<endl;
 	else
-		cout<<" bit is "<<0<<endl;
+		cout<<"first bit is "<<0<<endl;
 
 
 // --------------------------------------------	
 
 	ll newNum = setBit(n,4);
 	cout<<"new number after setting is : "<<newNum<<endl;
+
+//-----------------------------------------------
+
+	ll clearednum  = clearBit(n,1);
+	cout<<"clearednum is  : "<<clearednum<<endl;
+
+
+	// -----------------------------------------
+
+  // -1= 11111111111111111 (in binary)
+
+	ll clearedibits = clearlastiBits(n,2);
+	cout<<"clearedLastIBits  is : " <<clearedibits <<endl  ;
+
+		
 
 	return 0;
 }
