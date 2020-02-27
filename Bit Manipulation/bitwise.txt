@@ -1,0 +1,25 @@
+Bit wise operators :
+
+1.  &  (and) ---> both the bits should 1 
+
+2.  || (Or)  ---> at least 1 bit is 1
+
+3.  !  (Not) ---> Negation  
+			 ---->flips all the bits from 1 to 0 & 0 to 1
+
+4.  ^ (XOR)  ---> also called as exclusively or
+			 ---> only either of the bits is 1  
+
+5. << (Left Shift) --->multiplication by 2
+	
+	5 << 2 
+	101 << 2 --> 1010 << 10100    = 20
+ 
+ so, a<<b == a * 2^b;
+
+6. >> (Right Shift)  --> Divison by 2
+
+ 	20 >> 2
+ 	10100 >> 2 = 101   =  5
+
+ so, a>>b = a/(2^b) ;
