@@ -42,10 +42,23 @@ ll clearlastiBits(ll n, ll i)
 
 }
 
+ll clearRangeItoJ(ll n, ll i, ll j)
+{
+	ll ones = ~0;
+	ll a = ones <<(j+1) ;
+	ll b = (1<<i) - 1;
+	ll mask  = a | b;
+	ll ans = n & mask;
+
+	return ans;
+
+}
+
 int main()
 {
 
 	ll n;
+	cout<<"enter a number : "<<endl;
 	cin >> n;
 	
 	if(isOdd(n))  // last bit only decides whether a number is od or even
@@ -80,7 +93,22 @@ int main()
 	ll clearedibits = clearlastiBits(n,2);
 	cout<<"clearedLastIBits  is : " <<clearedibits <<endl  ;
 
-		
+//--------------------------------------------------------
+	
+// clear bits in range i to j
 
+// 0111 in binary can be represented as (2^3)-1 ;
+
+	ll i,j; // 0 based indexing from right	
+	i = 1;
+	j = 3 ;
+	ll value=0;
+	value = clearRangeItoJ(n,i,j);
+	cout<<"after clearing from i= "<<i <<" to j = "<<j<<"  value is : "<<value<<endl;
+
+//-----------------------------------------------------------------
+
+
+	
 	return 0;
 }
