@@ -83,7 +83,7 @@ ll compute(ll n)
 	  		}
 
 	  	}
-
+	  	
 	  	// third step : computing T^n-1
 	  	T = power(T,n-1);
 
@@ -105,7 +105,8 @@ int main()
 	{
 		
 		cin>>k;
-		for (ll i = 0; i < k; ++i){
+		for (ll i = 0; i < k; ++i)
+		{
 			ll tmp;
 			cin>>tmp;
 			b.push_back(tmp);
