@@ -16,7 +16,7 @@ Basically we eneed to find: (a-b)%n = 0  =>a%n = b%n
 step1 : find commulative sum array where each element mod 5.
 step2 : find the frequency of commulatve sum array.
 step3 : for each freq >=2 Find fC2 and add to determine
-		 no of subarrays.
+		no of subarrays.
 */
 
 #include<bits/stdc++.h>
