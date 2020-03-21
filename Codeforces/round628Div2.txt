@@ -1,0 +1,12 @@
+What i learnt from the contest?
+
+Nontechnical :->
+
+1.Dont think too difficult for the easy problems, 
+espcially for a and b questions on codeforces.
+2.
+
+Technical :->
+
+1. lcm(a,b) = (a*b)/gcd(a,b);
+2. lcm(a,b) * gcd(a,b) = a*b ;
