@@ -1,0 +1,40 @@
+
+sample problems of fibonacci series :
+
+1. number of boolean strings of length N with no consecutive ones's
+2. find number of ways to build  a wall of size 2 X n with brics of size 1x2 and 2x1.
+
+
+
+ways to compute nth fibonacci:
+
+very imp blog : https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
+
+1. recusursion : a. only when n<= 20
+				 b. complexity : O(2^n)
+2. Top Down DP : a. We can memoise the values 
+			     b. complexity : O(N)
+3. Bottum UP DP: a. Due to call stack and array that we memoize
+				 b. complexity : O(N)
+4. DP with space optimization : using three variables a,b,c
+				 a. time : O(N)
+				 b. space : O(1)
+5. Matrix exponentiation : O(k^3 * log(N))  = O(log(N))   => since k  in this case is 2
+							works for N = 10^18 since O(10^18) = 60 
+							takes time to implement
+6. Binets formula : approximation technique works till some range
+					time: O(1)
+7. 	codeforces Hack : derived form matrix exponentiation
+					  kind of divide and conquer technique
+					  easy and fastest way to implement
+					  Bottom Up DP
+
+
+Interesting properties of fibonacii sereis:
+
+1. zeckendorf's theorem : each positive number can be written in a unique way as a sum of one or more fibonacci numbers such that some doesnt include two consecutive numbers.
+
+2. pisano period : last 1/2/3/4 digits repeat with period of 60/300/1500/15000 respectively.
+
+
+			
