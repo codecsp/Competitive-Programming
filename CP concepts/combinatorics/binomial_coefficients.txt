@@ -1,0 +1,9 @@
+
+
+binomial coefficients:
+
+n C k = no of ways to to select  k items out of n possible items
+
+n C k = (n !)/((n-k)! * k!)
+
+n C k = n  C (n-k)
